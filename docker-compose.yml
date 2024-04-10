@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    gpio:
+        build: .
+        tty: true
+        privileged: true
+        volumes:
+            - ./code:/code
+        command: bash
